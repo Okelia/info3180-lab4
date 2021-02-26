@@ -68,10 +68,6 @@ def files():
     return render_template('files.html', uploads=uploads)
 
 
-
-
-
-
 @app.route('/login', methods=['POST', 'GET'])
 def login():
     error = None

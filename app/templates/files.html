@@ -3,8 +3,9 @@
 {% block main %}
 <div class="image">
     {% for i in uploads %}
-        <img class="img" src="{{ url_for('get_image', filename=i) }}">
+       <div>
+            <img class="img" src="{{ url_for('get_image', filename=i) }}">
+       </div>       
     {%endfor%}
 </div>
-
 {%endblock%}
